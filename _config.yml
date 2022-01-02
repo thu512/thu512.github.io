@@ -1,7 +1,7 @@
 # Configurations
 title:            GreenApple
-longtitle:        GreenApple
-author:           ChangJoo Lee
+longtitle:        GreenApple's blog
+author:           changjoo lee
 email:            thu512@kakao.com
 description: >
   Build Jekyll site with the GitBook style.
@@ -10,7 +10,7 @@ version:          1.0
 gitbook_version:  3.2.3
 
 url:              'https://thu512.github.io'
-baseurl:          '/jekyll-gitbook'
+baseurl:          ''
 rss:              RSS
 
 toc:
