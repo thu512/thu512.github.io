@@ -17,8 +17,12 @@
             <li class="divider"></li>
 
             {% assign reversed_posts = site.posts | reverse %}
-
+            {% assign pre_post_cate = "" %}
             {% for post in reversed_posts %}
+                {% assign post_cate = post.category %}
+                {% if post_cate != pre_post_cate and pre_post_cate != "" %}
+                <li class="divider"></li>
+                {% endif %}
                 {% if page.url == post.url %}
                 <li class="chapter active" data-level="1.2" data-path="{{site.baseurl}}{{post.url}}">
                 {% else %}
@@ -33,6 +37,7 @@
                         {% endif %}
                     {% endif %}
                 </li>
+                {% assign pre_post_cate = post.category %}
             {% endfor %}
 
             <li class="divider"></li>
